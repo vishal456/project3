@@ -1,0 +1,33 @@
+Project Report
+This project is similar to previous reacher project with some modifications for two agents. I have earlier tried to use MADDPG but could not train agent properly so i switched back to DDPG to train these agents to play tennis.
+
+Learning Algorithm:
+
+	ACTOR:
+		Linear(state_size, fc1_units), relu #state_size 24, fc1_units = 256
+		BatchNorm1d(fc1_units)
+		Linear(fc1_units, fc2_units), relu #fc2_units = 128
+		BatchNorm1d(fc2_units)
+		Linear(fc2_units, action_size), tanh #action_size = 2
+
+	CRITIC:
+		Linear(state_size, fc1_units) #state_size 24, fc1_units = 256
+		BatchNorm1d(fc1_units)
+		Linear(fc1_units+action_size, fc2_units) #fc2_units = 128 action_size = 2
+		Linear(fc2_units, 1)
+AGENT
+	BUFFER_SIZE = int(1e5)	#replay buffer size
+	BATCH_SIZE = 256	#mini batch size
+	GAMMA = 0.99		#discount factor
+	TAU = 0.02		#for soft update of target parameters
+	LR_ACTOR = 1e-3		#learning rate for actor
+	LR_CRITIC = 1e-3	#learning rate for critic
+	WEIGHT_DECAY = 0.0	#L2 weight decay
+	NUM_UPDATES : 4 	#how many times network is updated
+	TIME_STEPS : 2		#update network every 2nd timestep
+	Nosie EPSILON : 0.2
+	EPSILON_DECAY Noise : 0.9999
+	SIGMA Noise : 0.2
+
+Idea for future work:
+Implement this using MADDPG Algorithm.
