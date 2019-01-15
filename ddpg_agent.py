@@ -14,7 +14,6 @@ GAMMA = 0.99
 TAU = 0.02
 LR_ACTOR = 1e-3
 LR_CRITIC = 1e-3
-WEIGHT_DECAY = 0.0
 NUM_UPDATES = 4
 TIME_STEPS = 2
 EPSILON = 0.2
@@ -44,7 +43,7 @@ class Agent():
         if Agent.critic_target is None:
             Agent.critic_target = Critic(state_size, action_size, random_seed).to(device)
         if Agent.critic_optimizer is None:
-            Agent.critic_optimizer = optim.Adam(Agent.critic_local.parameters(), lr=LR_CRITIC,weight_decay=WEIGHT_DECAY)
+            Agent.critic_optimizer = optim.Adam(Agent.critic_local.parameters(), lr=LR_CRITIC)
 
         self.critic_local = Agent.critic_local
         self.critic_target = Agent.critic_target
