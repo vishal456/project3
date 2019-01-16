@@ -4,7 +4,7 @@
 
 ### Problem:
 
-A pair of agents learn to play tennis. Aim is to make both the tennis agent learn to hit the ball over the net. I have tried to solve this by using DDGP DeppRL aglorithm.
+A pair of agents learn to play tennis. Aim is to make both the tennis agent learn to hit the ball over the net. I have tried to solve this by using DDGP DeepRL aglorithm.
 
 ![Trained Agent][image1]
 
