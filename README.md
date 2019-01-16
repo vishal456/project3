@@ -1,8 +1,12 @@
+[image1]: https://user-images.githubusercontent.com/10624937/42135623-e770e354-7d12-11e8-998d-29fc74429ca2.gif "Trained Agent"
+
 ### This repo contains solution for Tennis Unity Environment as my final project for udacity nanodegree(DeepRL) program.
 
-### Problem: 
+### Problem:
 
 A pair of agents learn to play tennis. Aim is to make both the tennis agent learn to hit the ball over the net. I have tried to solve this by using DDGP DeppRL aglorithm.
+
+![Trained Agent][image1]
 
 For more details please check out this link: https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis
 
