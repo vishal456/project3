@@ -5,6 +5,8 @@ A pair of agents learn to play tennis. Aim is to make both the tennis agent lear
 
 For more details please check out this link: https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis
 
+Obseration Space of length 24
+
 Actions:
 This environment has an continuous action space size of 2.
 
@@ -14,9 +16,16 @@ Rewards:
 
 To solve this environment, we need to acheive a average score of 0.5.
 
-Dependencies File:
+Environment Dependencies File:
 	requirements.txt
 	use command : pip install -r requirements.txt
+
+Unity Environment:
+	You need only select the environment that matches your operating system:
+		Linux: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip
+		Mac OSX: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip
+		Windows (32-bit): https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip
+		Windows (64-bit): https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip
 
 Main File: Tennis.ipynb
 Running Trained Agent File: Tennis_Trained.py
